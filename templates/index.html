@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lannisters - Home</title>
+    <link href="{{ url_for('static', filename='css/styleIndex.css') }}" rel="stylesheet">
+
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body style='background: url({{ url_for('static', filename='videos/WallHome.gif') }}); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;'>
+    <nav>
+        <div class="logo">
+            <img src="../static/images/logo7a.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <section class="sec1">
+        <!-- <div class="left1">
+            <img src="./res/images/network.gif" alt="network">
+        </div> -->
+        <div class="right1">
+            <h1>Detect Your Age</h1>
+            <div class="info">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci delectus nobis rem. Ipsum laudantium est veritatis hic, facere, nulla ut delectus placeat reiciendis assumenda soluta tenetur magnam nam enim! Saepe!</p>
+            </div>
+            <div class="inputs">
+                <button id="webcam"><a class="buttontext" href="{{ url_for('openCam') }}" style="text-decoration: none;"><i class="fa-solid fa-camera-retro"></i> Cam</a></button>
+                <button id="file"><a class="buttontext" href="{{ url_for('result') }}"><i class="fa-solid fa-upload"></i> File</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <h1>What the project is ?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto reprehenderit ipsa nisi? Molestias sunt aspernatur nisi eum nobis tenetur at assumenda laborum voluptatem, explicabo ipsam voluptates sed nesciunt facilis perspiciatis cupiditate,
+            architecto et consectetur sapiente soluta numquam. Fugiat corporis quos, eos dolor modi voluptates reiciendis eligendi ducimus laborum magnam iure quis dolore sint neque sapiente saepe aliquid, earum provident natus voluptatem. Adipisci dolorum
+            quidem, eligendi explicabo delectus officiis suscipit soluta dolorem repellat vitae ducimus hic architecto, nisi ut corrupti molestias. Placeat labore id porro omnis aperiam atque distinctio unde aliquid eum, impedit nesciunt sed possimus,
+            quibusdam incidunt voluptatibus nulla?</p>
+    </section>
+    <footer>
+        <h3>&copy; Team Lannisters</h3>
+    </footer>
+</body>
+
+</html>
